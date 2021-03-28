@@ -8,5 +8,8 @@
     "mpdf/mpdf": "^8.0",
     "phpmailer/phpmailer": "^6.3",
     "league/oauth2-google": "^4.0"
+  },
+  "config": {
+    "platform-check": false
   }
 }

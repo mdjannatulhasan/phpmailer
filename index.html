@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>PHP Mailer Test</title>
+    <style>
+        body{
+            margin: auto;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <h1>Send Email to Mailtrap</h1>
     <form action="public/request-variable.php" method="post">
-
+    <h4>Please enter your Mailtrap SMTP credentials</h4>
     <input type="text" name="trapMailerUsername" placeholder="Username" />
 
-    <input type="text" name="trapMailerPassword" placeholder="Password" />
+    <input type="text" name="trapMailerPassword" placeholder="Password" /> <br> <br>
 
     <input type="submit" name="submit" />
 </form>
