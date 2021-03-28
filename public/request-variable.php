@@ -57,9 +57,8 @@ if ( isset( $_POST['submit'] ) ) {
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         $mail->send();
-        echo 'Message has been sent';
+        echo '<h1 style="color:green; text-align:center">Message has been sent</h1>'.'<h2 style="color:green; text-align:center">Please Check your <a href="https://mailtrap.io/inboxes/"><span style="color:red">Mailtrap</span></a> inbox</h2>';
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    }
+        echo '<h3 style="color:red;">Message could not be sent.</h3> '. "<br> 
 exit;
 }
